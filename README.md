@@ -1,20 +1,13 @@
-# DSW-Obiekt-wka-45692
-Programowanie obiektowe ćwiczenia gr. 3
+# 'Bluff' card game
 
-Na zajęcia przygotowałem projekt gry karcianej w oszusta.
+Project's goal is to implement 'Bluff' card game in Python where players are defined bots and use heuristic algoritms to optimise decision making strategy.
 
-Gra polega na próbie odgadnięcia najwyższej figury pokerowej na stole.
-Każdy z graczy zaczyna z jedną kartą i może zadeklarować wyższą figurę lub sprawdzić poprzedniego gracza.
-W przypadku sprawdzenia gracz, który się pomylił zacznie następną rozgrywkę z jedną kartą więcej.
-Jeżeli liczba kart gracza zwiększy się do pięciu, odpada on z dalszej gry.
-Gra kończy się, gdy zostanie jeden gracz.
+Each player starts with one card, tries to guess what is the highest poker figure on the table then decides if to bid higher figure or check the previous player.
+The player who was wrong starts the next turn with one card more on his hand.
+If player recives 6th card he loses.
+The last player at the table is the winner.
+https://pl.m.wikipedia.org/wiki/Blef_(gra)
 
-Kod napisałem w języku python.
-Zdefiniowałem trzy klasy obiektów: karta, talia, gracz.
-Napisałem dwie długie metody:
-do generowania słownika możliwych deklaracji figur w rosnącej kolejności,
-do sprawdzenia prawdziwości aktualnej deklaracji
-
-Planowane kroki projektu:
--czyszczenie, uproszczenie istniejącego kodu
--implementacja wyboru strategii dla graczy (aktualnie decyzje są podejmowane losowo)
+The implementation of the game in Python is ready.
+The next step is to create better decision algoritm with parameters which can be optimised.
+Then the chosen heuristic algoritm will be used to optimise the parameters.
